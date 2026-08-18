@@ -323,7 +323,7 @@ function BunnyMaze() {
   return /*#__PURE__*/React.createElement("div", {
     style: {
       minHeight: '100vh', background: 'var(--white)', fontFamily: 'var(--font-body, Geist, sans-serif)',
-      color: 'var(--black)', padding: '56px clamp(20px, 5vw, 80px) 72px', boxSizing: 'border-box',
+      color: 'var(--black)', padding: 'clamp(120px, 15vw, 150px) clamp(20px, 5vw, 80px) 72px', boxSizing: 'border-box',
       display: 'flex', justifyContent: 'center'
     }
   },
