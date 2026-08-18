@@ -177,22 +177,22 @@ function Nav({
     };
   }, [menuOpen]);
   const links = [{
-    href: "/",
+    href: "https://martinavasconez.com/",
     label: "Home",
     key: "home"
   }, {
-    href: "work",
+    href: "https://martinavasconez.com/work",
     label: "Work",
     key: "work"
   }, {
-    href: "about",
+    href: "https://martinavasconez.com/about",
     label: "About",
     key: "about"
   }];
   return /*#__PURE__*/React.createElement("nav", {
     className: `nav ${scrolled ? "scrolled" : ""}`
   }, /*#__PURE__*/React.createElement("a", {
-    href: "/",
+    href: "https://martinavasconez.com/",
     className: "nav-mark"
   }, /*#__PURE__*/React.createElement("img", {
     src: "logo.png",
@@ -284,15 +284,15 @@ function Footer() {
   }, "vasconez."))), /*#__PURE__*/React.createElement("p", null, "Strategist, creator, and entrepreneur with a background in growth, marketing, storytelling, and design.")), /*#__PURE__*/React.createElement("div", {
     className: "footer-col"
   }, /*#__PURE__*/React.createElement("h4", null, "Pages"), /*#__PURE__*/React.createElement("a", {
-    href: "/"
+    href: "https://martinavasconez.com/"
   }, "Home"), /*#__PURE__*/React.createElement("a", {
-    href: "work"
+    href: "https://martinavasconez.com/work"
   }, "Work"), /*#__PURE__*/React.createElement("a", {
-    href: "about"
+    href: "https://martinavasconez.com/about"
   }, "About me"), /*#__PURE__*/React.createElement("a", {
-    href: "privacy-policy"
+    href: "https://martinavasconez.com/privacy-policy"
   }, "Privacy Policy"), /*#__PURE__*/React.createElement("a", {
-    href: "terms-conditions"
+    href: "https://martinavasconez.com/terms-conditions"
   }, "Terms & Conditions")), /*#__PURE__*/React.createElement("div", {
     className: "footer-col"
   }, /*#__PURE__*/React.createElement("h4", null, "LET'S CONNECT"), /*#__PURE__*/React.createElement("a", {
