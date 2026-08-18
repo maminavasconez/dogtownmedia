@@ -51,6 +51,31 @@
 <body>
 <div id="root"></div>
 
+<script>
+// Cursor dot
+document.addEventListener('mousemove', (e) => {
+  const dot = document.querySelector('[data-cursor-dot]') || (() => {
+    const d = document.createElement('div');
+    d.setAttribute('data-cursor-dot', 'true');
+    d.style.cssText = `
+      position: fixed;
+      width: 12px;
+      height: 12px;
+      background: var(--lime);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 99999;
+      box-shadow: 0 0 10px var(--lime), 0 0 20px rgba(198, 255, 51, 0.6);
+      animation: pulse 1.5s ease-in-out infinite;
+    `;
+    document.body.appendChild(d);
+    return d;
+  })();
+  dot.style.left = (e.clientX - 6) + 'px';
+  dot.style.top = (e.clientY - 6) + 'px';
+});
+</script>
+
 <script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" integrity="sha384-DGyLxAyjq0f9SPpVevD6IgztCFlnMF6oW/XQGmfe+IsZ8TqEiDrcHkMLKI6fiB/Z" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" integrity="sha384-gTGxhz21lVGYNMcdJOyq01Edg0jhn/c22nsx0kyqP0TxaV5WVdsSH1fSDUf5YJj1" crossorigin="anonymous"></script>
 
